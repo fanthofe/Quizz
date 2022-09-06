@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Open sans, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+/* TITLE */
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: Roboto, sans serif;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.title span {
+  font-weight: 800;
+}
+
+/* QUIZZ SECTION */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-group {
+  min-height: 150px;
+  margin-bottom: 20px;
+  padding: 25px 20px;
+  background: #F1F1F1;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px rgba(104,104,104,0.5);
+}
+
+.input-group > div {
+  display: flex;
+  align-items: center;
+}
+
+.input-group h4 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.answer input, label{
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.answer label {
+  font-size: 20px;
+}
+
+.answer input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  background: linear-gradient(0.25turn, rgba(52, 201, 36) , rgba(176, 242, 182));
+  font-family: Roboto, sans serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: none;
+  padding: 15px 5px;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+button span {
+  font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(0.25turn, rgba(52, 201, 36, 0.6) , rgba(176, 242, 182, 0.8));
+  color: #F1F1F1;
+}
+
+div.info {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background: #F1F1F1F1;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px grey;
+} 
+
+.info .result {
+  font-size: 25px;
+}
+

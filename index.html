@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <p class="title"><span>Quizz</span> Culture générale ✅</p>
+      <form>
+        <div class="input-container">
+          <div class="input-group">
+            <h4>Qui est sacré empereur de France le 2 Décembre 1804 ?</h4>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="clovis"
+                class="a"
+                value="clovis"
+                name="question1"
+                checked>
+              <label for="clovis">Clovis</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="abraham"
+                class="b"
+                name="question1"
+                value="abraham">
+              <label for="abraham">Abraham Lincoln</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="napoleon"
+                class="c"
+                name="question1"
+                value="napoleon">
+              <label for="napoleon">Napoléon Bonaparte</label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Quand la déclaration d'indépendance des Etats-Unis a-t-elle été votée</h4>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="juillet"
+                class="a"
+                value="juillet"
+                name="question2"
+                checked>
+              <label for="juillet">4 Juillet 1776</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="avril"
+                class="b"
+                name="question2"
+                value="avril">
+              <label for="avril">18 Avril 1856</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="juin"
+                class="c"
+                name="question2"
+                value="juin">
+              <label for="juin">30 Juin 1925</label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Quand a eu lieu la chute de l'Empire Romain d'Occident ?</h4>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="15"
+                class="a"
+                value="15"
+                name="question3"
+                checked>
+              <label for="15">15 ap.J-C</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="476"
+                class="b"
+                name="question3"
+                value="476">
+              <label for="476">476 ap.J-C</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="-740"
+                class="c"
+                name="question3"
+                value="-740">
+              <label for="-740">-740 av.J-C</label>
+            </div>
+          </div>
+
+            <div class="input-group">
+            <h4>Quelle est la capitale de la Slovénie ?</h4>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="ljubljana"
+                class="a"
+                value="ljubljana"
+                name="question4"
+                checked>
+              <label for="ljubljana">Ljubljana</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="belgrade"
+                class="b"
+                name="question4"
+                value="belgrade">
+              <label for="belgrade">Belgrade</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="bratislava"
+                class="c"
+                name="question4"
+                value="bratislava">
+              <label for="bratislava">Bratislava</label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Combien d'habitants compte l'Irlande en 2020 ?</h4>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="1,3M"
+                class="a"
+                value="1,3M"
+                name="question5"
+                checked>
+              <label for="1,3M">1,365 Millions</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="21M"
+                class="b"
+                name="question5"
+                value="21M">
+              <label for="21M">21 Millions</label>
+            </div>
+            <div class="answer">
+              <input 
+                type="radio"  
+                id="4,9M"
+                class="c"
+                name="question5"
+                value="4,9M">
+              <label for="4,9M">4,9 Millions</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" onclick="setTimeout(resetAllColor,7000)">VALIDER  <span>➔</span></button>
+        <div class="info">
+          <p class="result">Cliquez sur <span>valider</span> pour voir les <span>résultats</span></p>
+        </div>
+      </form>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
